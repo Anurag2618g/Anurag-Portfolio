@@ -34,7 +34,10 @@ const Navbar = () => {
     <nav className="container mx-auto z-10 top-5 sticky">
       <div className="flex items-center justify-between rounded-full bg-white/25 border border-[#fee6cc] backdrop-blur-[10px] m-5 p-3 md:p-0">
         {/* LOGO */}
-        <img className="h-10 ml-6 mb-1" src={LOGO} alt="Logo" />
+        <div className="flex items-center justify-between gap-1 md:gap-2">
+          <img className="h-10 ml-6 mb-1" src={LOGO} alt="Logo" />
+          <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">ANURAG GUPTA</h1>
+        </div>
 
         {/* Hamburger */}
         <button

@@ -1,8 +1,29 @@
-import React from 'react'
+import React from 'react';
+import ICON from '../assets/images/Icon.png';
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <section id='hero' className='container px-8 mx-auto'>
+      <div className='flex flex-col lg:flex-row gap-14 items-center justify-between mt-[80px]'>
+        <div className='order-2 text-center lg:order-1 lg:text-left mt-16 lg:mt-0'>
+          <h3 className='text-xl lg:text-2xl font-medium text-black'>👋Hi I'm Anurag</h3>
+          <h1 className="w-full lg:w-[480px] text-4xl lg:text-5xl font-bold leading-[50px] lg:leading-[60px] mt-3 bg-gradient-primary bg-clip-text text-transparent">Building Scalable And User Centric Web Apps</h1>
+
+          <p className='w-full lg:w-[500px] mt-4 text-sm lg:text-base'>
+            I'm a passionate Web Developer crafting responsive, accessible, and dynamic web experiences
+            using MERN stack.
+          </p>
+
+          <div className='flex justify-center lg:justify-start gap-4 md:gap-8 mt-6'>
+            <button className='flex-1 md:flex-none action-btn-outline btn-scale-anim'>View My Work</button>
+            <button className='flex-1 md:flex-none btn-outline btn-scale-anim'>Download Resume</button>
+          </div>
+        </div>
+        <div className='flex items-center justify-center md:mr-[200px] w-[350px] md:w-[420px] h-[400px] md:h-[478px] bg-orange-100/50 rounded-3xl order-1 lg:order-2'>
+          <img src={ICON} alt="PROFILE_PIC" className='profile-pic' />
+        </div>
+      </div>
+    </section>
   )
 }
 
