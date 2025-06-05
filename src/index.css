@@ -44,4 +44,8 @@
   .section-title {
     @apply text-[28px] font-semibold text-center bg-gradient-primary bg-clip-text text-transparent;
   }
+
+  .arrow-btn {
+    @apply absolute top-1/2 transform -translate-y-1/2 bg-primary text-white rounded-full p-2 shadow;
+  }
 }

@@ -1,12 +1,16 @@
 import { FaBootstrap, FaCode, FaCss3, FaGit, FaGithub, FaHtml5, FaJs, FaLinkedin, FaNode, FaReact, FaWind } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import IMG1 from "../assets/images/todo.png"
+import IMG2 from "../assets/images/travel.png"
+import IMG3 from "../assets/images/bank.png"
+import IMG4 from "../assets/images/openD.png"
 
 export const MENU_LINKS = [
-    {id:'01', label:'Home', offset:'-100', to:'hero'},
-    {id:'02', label:'Skills', offset:'-80', to:'skills'},
-    {id:'03', label:'About Me', offset:'-80', to:'about'},
-    {id:'04', label:'Projects', offset:'-80', to:'projects'},
-    {id:'05', label:'Contact', offset:'-80', to:'contact'},
+    {id:'01', label:'Home', offset:-100, to:'hero'},
+    {id:'02', label:'Skills', offset:-80, to:'skills'},
+    {id:'03', label:'About Me', offset:-80, to:'about'},
+    {id:'04', label:'Projects', offset:-80, to:'projects'},
+    {id:'05', label:'Contact', offset:-80, to:'contact'},
 ];
 
 export const SKILL_TABS = [
@@ -160,3 +164,34 @@ export const ABOUT_ME = {
     email: "anurag2618g@gail.com",
     phone: "+91 9258376208",
 };
+
+export const PROJECTS = [
+    {
+        id: 1,
+        title: "OpenD-Dex",
+        description: "OpenD is a cutting-edge decentralized exchange (DEX) platform built on blockchain technology and powered by a sleek React frontend.",
+        image: IMG4,
+        tags: ["Motoko", "JavaScript", "ReactJs", "PostgreSQL"],
+    },
+    {
+        id: 2,
+        title: "OpenD",
+        description: "A decentralized banking app with a simple, user-friendly interface that allows users to securely manage their finances.",
+        image: IMG3,
+        tags: ["Motoko", "ReactJs", "JavaScript", "PostgreSQL"],
+    },
+    {
+        id: 3,
+        title: "TravelTracker",
+        description: "This is an updated version of the postgres app made for tracking traveling countries.",
+        image: IMG2,
+        tags: ["Express", "Node", "PostgreSQL", "EJS"],
+    },
+    {
+        id: 4,
+        title: "TODO-List",
+        description: "This is a simple yet efficient todo list application built using JavaScript and leverages a PostgreSQL database for persistent data storage. ",
+        image: IMG1,
+        tags: ["Express", "Node", "PostgreSQL", "EJS"],
+    },
+]
