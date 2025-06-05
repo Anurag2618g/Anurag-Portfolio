@@ -4,6 +4,7 @@ import IMG1 from "../assets/images/todo.png"
 import IMG2 from "../assets/images/travel.png"
 import IMG3 from "../assets/images/bank.png"
 import IMG4 from "../assets/images/openD.png"
+import IMG5 from "../assets/images/book.png"
 
 export const MENU_LINKS = [
     {id:'01', label:'Home', offset:-100, to:'hero'},
@@ -163,6 +164,7 @@ export const ABOUT_ME = {
     ],
     email: "anurag2618g@gail.com",
     phone: "+91 9258376208",
+    location: "Bareilly, India",
 };
 
 export const PROJECTS = [
@@ -192,6 +194,13 @@ export const PROJECTS = [
         title: "TODO-List",
         description: "This is a simple yet efficient todo list application built using JavaScript and leverages a PostgreSQL database for persistent data storage. ",
         image: IMG1,
+        tags: ["Express", "Node", "PostgreSQL", "EJS"],
+    },
+    {
+        id: 5,
+        title: "Book-Notes",
+        description: "The Book Notes web application is designed to help users manage and track their read books. ",
+        image: IMG5,
         tags: ["Express", "Node", "PostgreSQL", "EJS"],
     },
 ]
