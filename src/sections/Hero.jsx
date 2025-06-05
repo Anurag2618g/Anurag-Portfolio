@@ -23,12 +23,6 @@ const Hero = () => {
           <img src={ICON} alt="PROFILE_PIC" className='profile-pic' />
         </div>
       </div>
-
-      {/* <div className='flex gap-12 mt-16 md:mt-24 flex-wrap'>
-        {STATS.map((item) => (
-          <StatsInfoCard key={item.id} label={item.label} count={item.count} />
-        ))}
-      </div> */}
     </section>
   )
 }
