@@ -1,4 +1,5 @@
-import { FaBootstrap, FaCode, FaCss3, FaGit, FaGithub, FaHtml5, FaJs, FaNode, FaReact, FaWind } from "react-icons/fa";
+import { FaBootstrap, FaCode, FaCss3, FaGit, FaGithub, FaHtml5, FaJs, FaLinkedin, FaNode, FaReact, FaWind } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export const MENU_LINKS = [
     {id:'01', label:'Home', offset:'-100', to:'hero'},
@@ -146,3 +147,16 @@ export const SKILLS = [
         "Proficient in using Visual Studio Code as a powerful code editor. Experienced with extensions, debugging tools, and workspace customization to streamline development workflows.",
     }
 ];
+
+export const ABOUT_ME = {
+    content: `I'm a web developer 🧩 with a passion for crafting interactive, responsive, and impactful digital experiences. I specialize in building modern web applications that combine clean code with thoughtful design to deliver seamless user experiences across devices.
+    \nDriven by curiosity and a love for continuous learning, I'm always exploring the latest trends in web development—from component-driven architectures and state management strategies to performance tuning and accessibility best practices.
+    \nFor me, innovation in web development is about pushing boundaries, refining the user experience, and building products that people genuinely enjoy using. I'm constantly honing my skills to stay current with the fast-paced evolution of the web, and I take pride in delivering solutions that are not just functional but thoughtfully engineered.`,
+    socialLinks: [
+        {id: "01", label: "GitHub", icon: FaGithub, link: "https://github.com/Anurag2618g"},
+        {id: "02", label: "Linkedin", icon: FaLinkedin, link: "https://www.linkedin.com/in/anurag-gupta-77b701215/"},
+        {id: "03", label: "Twitter", icon: FaXTwitter, link: "https://x.com/Anurag2618G"},
+    ],
+    email: "anurag2618g@gail.com",
+    phone: "+91 9258376208",
+};
