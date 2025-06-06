@@ -19,7 +19,7 @@ const Hero = () => {
             <button className='flex-1 md:flex-none btn-outline btn-scale-anim'>Download Resume</button>
           </div>
         </div>
-        <div className='flex items-center justify-center lg:mr-[200px] w-[350px] md:w-[420px] h-[400px] md:h-[478px] bg-orange-100/50 rounded-3xl order-1 lg:order-2'>
+        <div className='flex items-center justify-center w-[450px] md:w-[420px] h-[450px] md:h-[478px] bg-orange-100/50 rounded-3xl order-1 lg:order-2'>
           <img src={ICON} alt="PROFILE_PIC" className='profile-pic' />
         </div>
       </div>

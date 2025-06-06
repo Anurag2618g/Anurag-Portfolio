@@ -1,10 +1,11 @@
 import { FaBootstrap, FaCode, FaCss3, FaGit, FaGithub, FaHtml5, FaJs, FaLinkedin, FaNode, FaReact, FaWind } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaSquareLastfm, FaXTwitter } from "react-icons/fa6";
 import IMG1 from "../assets/images/todo.png"
 import IMG2 from "../assets/images/travel.png"
 import IMG3 from "../assets/images/bank.png"
 import IMG4 from "../assets/images/openD.png"
 import IMG5 from "../assets/images/book.png"
+import { ExpressIcon, Mongo, NextIcon, TailwindIcon, TSIcon } from "./icon";
 
 export const MENU_LINKS = [
     {id:'01', label:'Home', offset:-100, to:'hero'},
@@ -49,7 +50,7 @@ export const SKILLS = [
     },
     {
         id: "04",
-        icon: FaWind,
+        icon: TailwindIcon,
         skill: "TailWind",
         type: "frameworks",
         description: 
@@ -81,7 +82,7 @@ export const SKILLS = [
     },
     {
         id: "08",
-        icon: FaReact,
+        icon: ExpressIcon,
         skill: "Express",
         type: "frameworks",
         description: 
@@ -89,7 +90,7 @@ export const SKILLS = [
     },
     {
         id: "09",
-        icon: FaReact,
+        icon: TSIcon,
         skill: "TypeScript",
         type: "languages",
         description: 
@@ -97,7 +98,7 @@ export const SKILLS = [
     },
     {
         id: "10",
-        icon: FaReact,
+        icon: NextIcon,
         skill: "NextJS",
         type: "frameworks",
         description: 
@@ -105,7 +106,7 @@ export const SKILLS = [
     },
     {
         id: "11",
-        icon: FaReact,
+        icon: FaSquareLastfm,
         skill: "MySQL",
         type: "databases",
         description: 
@@ -113,7 +114,7 @@ export const SKILLS = [
     },
     {
         id: "12",
-        icon: FaReact,
+        icon: Mongo,
         skill: "MongoDB",
         type: "databases",
         description: 
@@ -121,7 +122,7 @@ export const SKILLS = [
     },
     {
         id: "13",
-        icon: FaReact,
+        icon: FaSquareLastfm,
         skill: "PostgreSQL",
         type: "databases",
         description:
