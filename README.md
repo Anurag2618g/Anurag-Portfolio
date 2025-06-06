@@ -1,12 +1,65 @@
-# React + Vite
+# 🧑‍💻 Anurag's Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal web developer portfolio! This project is a fully responsive, single-page application built using **React** and **Tailwind CSS**, designed to showcase my skills, projects, and contact information.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **React**
+- **JavaScript (ES6+)**
+- **Tailwind CSS**
+- **React Icons**
+- **Vite** *(or Create React App – update if needed)*
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- 🎨 Modern and responsive UI
+- 🖼️ Project showcase with image previews
+- 🧠 Skills section with animated tech icons
+- 📫 Contact form with real-time validation *(optional: backend/form handler)*
+- 🌙 Dark mode toggle *(if implemented)*
+- ⚡️ Optimized performance and smooth scroll behavior
+
+---
+
+## 🛠️ Installation & Setup
+
+Clone the repo and install dependencies:
+
+git clone https://github.com/your-username/your-portfolio-repo.git
+cd your-portfolio-repo
+npm install
+npm run dev
+
+
+
+---
+
+## Folder structure
+
+src/
+├── assets/        # Images & media
+├── components/    # Reusable components (Navbar, ProjectCard, etc.)
+├── pages/         # Page sections (Home, Projects, Contact, etc.)
+├── utils/         # Project data, constants
+└── App.jsx        # Main app component
+
+---
+
+## 🤝 Contact
+
+Want to connect?
+
+Portfolio: your-portfolio-site.com
+
+LinkedIn: linkedin.com/in/Anurag2618g
+
+Email: anurag2618g@gmail.com
+
+--- 
+
+## 📄 License
+This project is open source and available under the MIT License.
