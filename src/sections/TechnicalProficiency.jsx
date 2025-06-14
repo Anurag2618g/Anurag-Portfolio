@@ -38,7 +38,7 @@ const TechnicalProficiency = () => {
             onChange={handleTabValueChange}
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 min-h-[430px]">
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10 min-h-[230px] lg:px-40 sm:px-10">
         {tabData.map((skill, index) => (
           <motion.div 
             key={skill.id}
@@ -47,9 +47,9 @@ const TechnicalProficiency = () => {
             transition={{ duration:0.4, delay: index * 0.1}}
           >
             <SkillCard 
-              icon={<skill.icon className="w-6 h-6 text-primary" />}
+              icon={<skill.icon className="w-20 h-20 text-primary" />}
               skillName={skill.skill}
-              description={skill.description}
+              // description={skill.description}
             />
           </motion.div>
         ))}

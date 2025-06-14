@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactInfoCard from "../components/ContactInfoCard";
 import { IoMdMail } from "react-icons/io";
 import { ABOUT_ME } from "../utils/data";
@@ -6,6 +6,44 @@ import { IoPhonePortraitOutline } from "react-icons/io5";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactMe = () => {
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
+
+  const handleChange = (e) => {
+    setForm(prev => ({...prev, [e.target.name]: e.target.value}));
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("http://localhost:3000/contact", {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      });
+
+      const data = await res.json();
+
+      if(res.ok) {
+        alert('Message sent');
+        setForm({ name: '', email: '', message: '' });
+      } 
+      else {
+        console.log(data.message);
+      }
+    }
+    catch (err) {
+      console.log(err);
+      alert('Error sending message');
+    }
+  }
+
   return (
     <section id="contact">
       <div className="container mx-auto p-10">
@@ -30,12 +68,14 @@ const ContactMe = () => {
             <h5 className="md:hidden text-secondary text-lg font-medium mt-4 pb-5">
               Contact Form
             </h5>
-            <form className="flex flex-col">
+            <form onSubmit={handleSubmit} className="flex flex-col">
               <input
                 className="input-box"
                 id=""
                 type="text"
-                name="fullname"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
                 placeholder="Full Name"
                 autoComplete="off"
               />
@@ -44,6 +84,8 @@ const ContactMe = () => {
                 id=""
                 type="text"
                 name="email"
+                value={form.email}
+                onChange={handleChange}
                 placeholder="Email"
                 autoComplete="off"
               />
@@ -52,11 +94,13 @@ const ContactMe = () => {
                 id=""
                 type="text"
                 name="message"
+                value={form.message}
+                onChange={handleChange}
                 rows={3}
                 placeholder="Message"
                 autoComplete="off"
               />
-              <button className="btn-outline btn-scale-anim">Submit</button>
+              <button type="submit" className="btn-outline btn-scale-anim">Submit</button>
             </form>
           </div>
         </div>
