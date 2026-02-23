@@ -41,6 +41,7 @@ const ContactMe = () => {
     catch (err) {
       console.log(err);
       alert('Error sending message');
+      setForm({ name: '', email: '', message: '' });
     }
   }
 
