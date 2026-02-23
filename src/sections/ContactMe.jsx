@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ContactInfoCard from "../components/ContactInfoCard";
 import { IoMdMail } from "react-icons/io";
 import { ABOUT_ME } from "../utils/data";
