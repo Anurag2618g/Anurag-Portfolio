@@ -5,7 +5,11 @@ import sendMail from './controller.js';
 
 const PORT = 3000;
 const app = express();
-app.use(cors());
+const corsOptions = {
+    origin: 'https://anurag-portfolio-omega.vercel.app/',
+    optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 

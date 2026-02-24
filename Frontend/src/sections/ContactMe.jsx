@@ -20,7 +20,7 @@ const ContactMe = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("https://anurag-portfolio-xms9.onrender.com/contact", {
+      const res = await fetch("https://anurag-portfolio-ur2y.onrender.com", {
         method: 'POST',
         headers: {
         'Content-Type': 'application/json',
