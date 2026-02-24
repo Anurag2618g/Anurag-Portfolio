@@ -2,8 +2,11 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import sendMail from './controller.js';
+import dotenv from 'dotenv';
 
-const PORT = 3000;
+dotenv.config();
+
+const PORT = process.env.PORT || 3000;
 const app = express();
 const corsOptions = {
     origin: 'https://anurag-portfolio-omega.vercel.app',
