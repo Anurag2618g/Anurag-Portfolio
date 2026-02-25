@@ -27,6 +27,7 @@ const ContactMe = () => {
         },
         body: JSON.stringify(form),
       });
+      console.log(res);
 
       const data = await res.json();
 
